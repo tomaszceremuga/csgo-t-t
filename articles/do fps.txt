@@ -1,0 +1,8 @@
+zmiana z okna na fullscreena +33 
+te komendy +2fps
+mat_queue_mode -1/2 zależy 
+wysoki pryjoryter +2fps
+-novid -no-browser -nojoy -freq 240 +snd_use_hrtf 0  +35
+ustawienia steam +20fps 220fps
+steam overlay +3fps
+
