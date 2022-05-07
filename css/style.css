@@ -141,7 +141,7 @@ nav a{
 }
 article{
     margin: 45px 10%;
-    min-height: 762.5px;
+    min-height: 800px;
 }
 article h6{
     margin: 3% 0;
@@ -160,8 +160,8 @@ article h6{
 #slider {
     position: relative;
     /* roboczo */
-    width: 50%;
-    height: 30vw;
+    width: 40%;
+    height: 20vw;
     /*  */
     margin: 30px  auto 100px;
     /* background: chocolate; */
@@ -169,15 +169,16 @@ article h6{
     top: 0; */
     perspective: 1400px;
     transform-style: preserve-3d;
+
     
 }
 input[type=radio] {
     position: relative;
     top: 108%;
-    left: 50%;
+    left: 52%;
     width: 18px;
     height: 18px;
-    margin: 0 15px 0 0;
+    margin: 0 5px 0 0;
     opacity: 0.4;
     transform: translateX(-83px);
     cursor: pointer;
@@ -195,74 +196,117 @@ input[type=radio]:checked{
     left: 0;
     top: 0;
     color: white;
-    font-size: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: 400ms ease;
 }
 #slide1 {
-    background: tomato;
+    background: #13161B;
+    border-radius: 8px;
 }
+
+section .card-title{
+    margin-top: 3%;
+    /* font-size: 12px */
+}
+section .card-text{
+    margin: 0 20%;
+    text-align: center;
+    color: #c7c7c7;
+}
+
+
 #slide2{
-    background: #f1c40f;
+    background: #13161B;
+    border-radius: 8px;
 }
 #slide3{
-    background: turquoise;
+    background: #13161B;
+    border-radius: 8px;
 }
 #slide4{
-    background: rgb(124, 55, 156);
+    background: #13161B;
+    border-radius: 8px;
+    
 }
 #slide5{
-    background: rgb(197, 149, 103);
+    
+    background: #13161B;
+    border-radius: 8px;
 }
 
 
+/* Slider Functionality */
 
+/* Active Slide */
 #s1:checked ~ #slide1, #s2:checked ~ #slide2, #s3:checked ~ #slide3, #s4:checked ~ #slide4, #s5:checked ~ #slide5 {
+    box-shadow: 0px 9px 17px 11px rgba(0, 0, 0, 0.41);
     transform: translate3d(0%, 0, 0px);
-}
-#s1:checked ~ #slide2, #s2:checked ~ #slide3, #s3:checked ~ #slide4, #s4:checked ~ #slide5, #s5:checked ~ #slide1  {
+  }
+  
+  /* Next Slide */
+  #s1:checked ~ #slide2, #s2:checked ~ #slide3, #s3:checked ~ #slide4, #s4:checked ~ #slide5, #s5:checked ~ #slide1 {
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
     transform: translate3d(15%, 0, -100px);
-}
-#s1:checked ~ #slide3, #s2:checked ~ #slide4, #s3:checked ~ #slide5, #s4:checked ~ #slide1, #s5:checked ~ #slide2 {
+  }
+  
+  
+  /* Next to Next Slide */
+  #s1:checked ~ #slide3, #s2:checked ~ #slide4, #s3:checked ~ #slide5, #s4:checked ~ #slide1, #s5:checked ~ #slide2 {
+    box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
     transform: translate3d(30%, 0, -250px);
-}
-#s1:checked ~ #slide4, #s2:checked ~ #slide5, #s3:checked ~ #slide1, #s4:checked ~ #slide2, #s5:checked ~ #slide3 {
+  }
+  
+  /* Previous to Previous Slide */
+  #s1:checked ~ #slide4, #s2:checked ~ #slide5, #s3:checked ~ #slide1, #s4:checked ~ #slide2, #s5:checked ~ #slide3 {
+    box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
     transform: translate3d(-30%, 0, -250px);
-}
-#s1:checked ~ #slide5, #s2:checked ~ #slide1, #s3:checked ~ #slide2, #s4:checked ~ #slide3, #s5:checked ~ #slide4 {
+  }
+  
+  /* Previous Slide */
+  #s1:checked ~ #slide5, #s2:checked ~ #slide1, #s3:checked ~ #slide2, #s4:checked ~ #slide3, #s5:checked ~ #slide4 {
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
     transform: translate3d(-15%, 0, -100px);
-}
+  }
 
 
-
-
-https://youtu.be/feVfzM--S3Y?t=1284 !
-
-
-
-
-
-
-/* cards */
-.card{
-    max-width: 500px;
-    margin-bottom: 20px;
-    color: #fefff0;
-    border: 0;
-    border-radius: 30px; 
-    text-align: center;
-
-}
-@media only screen and (min-width: 1900px) {
-    .card{
-        min-height: 350px;
+@media only screen and (max-width: 1000px) {
+    #slider{
+        width: 80%;
+        height: 40vw;
+    }
+    input[type=radio] {
+        left: 54%;
     }
 }
-.card-img-top{
-    border-radius: 30px 30px 0 0;
+@media only screen and (max-width: 400px) {
+    input[type=radio] {
+        left: 61%;
+    }
 }
+@media only screen and (max-width: 700px) {
+    #slider{
+        width: 70%;
+        height: 90vw;
+    }
+    input[type=radio] {
+        left: 60%;
+    }
+}
+
+
+#card-video{
+    width: 100.1%;
+    border-radius: 8px 8px 0 0;
+}
+
+
+/* card img */
+section img {
+    top: 0;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    
+}
+
 .card-title{
     font-weight: 500;
     font-size: 25px;
@@ -286,6 +330,10 @@ a, a:hover, a:focus, a:active {
 
 
             /* in tutorial */
+
+
+
+
 
 .setions{
     display: flex;
@@ -452,6 +500,30 @@ a, a:hover, a:focus, a:active {
     .copy-text button:hover {
         background: #868bda;
     }
+    
+    
+    /* RIGHT SECTION */
+    .like{
+        background: none;
+        border: none;
+        color: none;
+    }
+    .right-section i{
+        font-size: 110%;
+        transition: 0.3s;
+    }
+    .right-section i:hover{
+        color: rgb(255, 100, 100);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     .advertisement{
         width: 100%;
         max-width: 450px;
@@ -464,23 +536,10 @@ a, a:hover, a:focus, a:active {
         border-radius: 30px;
         transform: scale(1);
     }
-    .carousel{
-        width: 100%;
-        max-width: 450px;
-        height: auto;
-        max-width: 426px;
-        margin: 15px 0;
-        border-radius: 30px;
-        transform: scale(1);
-    }
-    .carousel-item{
-        background-color: rgb(61, 61, 61);
-    }
+    
+
     @media only screen and (max-width: 426px) {
         .advertisment-img{
-            transform: scale(1);
-        }
-        .carousel{
             transform: scale(1);
         }
     }
@@ -495,30 +554,30 @@ a, a:hover, a:focus, a:active {
         }  
     }
     @media only screen and (min-width: 1659px) {
-        .advertisement{
-            margin-left: -34px;
-            margin-top: 190px;
+        .right-section .lighter{
+            margin-top: 150px;
+            margin-left: -60px;
+            width: 285px;
         }
-        .carousel{
-            width: 100%;
-            max-width: 426px;
-            margin: 15px 0;
+        
+        .advertisement {
             margin-left: -34px;
-            top: 65.5px;
-            border-radius: 8px;
-            border: 10px solid rgb(46, 46, 46);
-            transform: scale(1.3);
+            margin-top: 100px;
         }
         .advertisment-img{
             margin: 0% 0 12px;
-            transform: scale(1.3);
-
+            transform: scale(1.3)
         }
         
     }
     
 
-/* FOOTER */
+
+
+
+    /* FOOTER */
+
+
 footer{
     position: relative;
     bottom: 0px;
@@ -560,6 +619,8 @@ footer{
     place-content: center;
     border-radius: 50px;
 }
+
+
 /* Newsletter */
 
 .newsletter{
