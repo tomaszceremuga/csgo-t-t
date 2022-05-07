@@ -5,9 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CS:GO HELP | Commands, Tutorials, Tips...</title>
-  <link rel="icon" href="img_index/help_icon.png">
-  <!-- CSS only -->
+  <title>CS:GO T&T | Commands, Tutorials, Tips...</title>
+  <link rel="icon" href="img/help_icon.png">
+  <link rel="stylesheet" href="css/style.scss">
+
+  
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -17,6 +22,7 @@
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
     crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="../css/dark.css">  
 </head>
@@ -28,7 +34,7 @@
     <!-- logo + nazwa -->
 
     <a class="navbar-brand" href="index.html"> <img src="img/help_icon.png" width="33" height="33"
-        class="d-inline-block align-top" alt="logo" style="margin-right: 0.5vw;"> <span class="text60px">CS:GO Help</span> </a>
+        class="d-inline-block align-top" alt="logo" style="margin-right: 0.5vw;"> <span class="text60px">CS:GO T&T</span> </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"  style="background-color: #181A1F; padding: 3px 3px 3px 3px; border-radius: 15px !important;">
       
@@ -46,17 +52,7 @@
         <li class="nav-item">
           <a class="nav-link" href="https://discord.gg/2qhRYA9V">Question?</a>
         </li>
-        <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Categories
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #13161B; border: none;">
-            <a class="dropdown-item" href="#" style="background-color: #13161B;">Simple tutorials</a>
-            <a class="dropdown-item" href="#" style="background-color: #13161B;">FPS boost</a>
-            <a class="dropdown-item" href="#" style="background-color: #13161B;">Problem solution</a>
-          </div>
-        </li> -->
+        
       </ul>
       
       <!-- przelacznik -->
@@ -64,12 +60,12 @@
       <div class="buttons2">
       <input type="checkbox" class="checkbox" id="checkbox" style="margin-top: -3px !important; margin-right: -13px !important; color: rgb(254, 255, 240);">
       <label for="checkbox" class="label">
-        <i class="bi bbi-brightness-high"><svg xmlns="http://www.w3.org/2000/svg" width="16.3" height="16.3" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16.3" height="16.3" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
             <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
-          </svg></i>
-        <i class="bi bi-moon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+          </svg>
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
             <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-          </svg></i>
+          </svg>
         <div class="ball"> </div>
       </label>
       
@@ -92,22 +88,21 @@
 
 
     <article>
-        <h2>Welcome CS:GO Help!</h2>
-        <h6> <span class="purple-text"> Here you can find command, guides, and tips</span></h6>
+        <h2>Welcome CS:GO tips & tricks!</h2>
+        <h6> <span class="purple-text"> Here you can find command, guides, and tips for cs</span></h6>
         <hr style="margin-bottom: 50px;">
-        <h5>Simple tutorials</h5>
-        <h6> <span class="purple-text">Simple tutorials that will improve your gameplay</span></h6>
+        <div class="center"<h5>Suggested tutorials</h5></div>
+        <!-- <h6> <span class="purple-text">Simple tutorials that will improve your gameplay</span></h6> -->
             
+        
+          
+          
+          
+          
+          
           
 
-          
-          
-          
-          
-          
-          
-
-           <div class="row gap-8 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 justify-content-center" style="align-items: left !important;">
+           <!-- <div class="row gap-8 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 justify-content-center" style="align-items: left !important;">
             
             <div class="col">
               <div class="card">
@@ -160,21 +155,52 @@
           
               
           </div>
-        </div> 
+        </div>  -->
+        
+        <section id="slider">
+          
+          
+          <input type="radio" name="slider" id="s1" checked> 
+          <input type="radio" name="slider" id="s2"> 
+          <input type="radio" name="slider" id="s3"> 
+          <input type="radio" name="slider" id="s4"> 
+          <input type="radio" name="slider" id="s5">   
 
+
+          <label for="s1" id="slide1">1</label>
+          <label for="s2" id="slide2">2</label>
+          <label for="s3" id="slide3">3</label>
+          <label for="s4" id="slide4">4</label>
+          <label for="s5" id="slide5">5</label> 
+        </section>
 
       </article>
+      
+      
       <footer>
         <div class="in-footer">
-          <a href="#" style="font-size: 20px;"><img class="footer-logo" src="img/help_icon.png" alt="your webbrowser doesn't support img">
-          <p class="footer-text"> CS:GO Help</a>
-          <br>
-          <span style="font-size: 10px; margin-left: 3px;">by Tomasz Ceremuga 1TP</span></p>
+          <div class="footer-left">
+            <a href="#" style="font-size: 20px;"><img class="footer-logo" src="img/help_icon.png" alt="your webbrowser doesn't support img">
+            <p class="footer-text"> CS:GO T&T</a>
+            <br>
+            <span style="font-size: 10px;">by Tomasz Ceremuga 1TP</span></p>
+          </div>
+          <div class="footer-mid"></div>
+          <div style="display: flex; margin-top: 3px; margin-left: 15px;">
+            <div class="newsletter">
+            <div class="icon-newsletter"><i class="bi bi-envelope"></i></div>
+            <input class="input-newsletter" type="email" name="" value="" placeholder="Enter your email">
+            <button class="button-newsletter" type="button" name="subscribe">Subscribe!</button>
+          </div>
         </div>
       </footer>
 
 
     <script src="script.js"></script>
+    
+    <script>
+    
+    </script>
 </body>
 
 </html>
