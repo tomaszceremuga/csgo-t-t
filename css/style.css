@@ -141,7 +141,7 @@ nav a{
 }
 article{
     margin: 45px 10%;
-    min-height: 1000px;
+    min-height: 800px;
 }
 article h6{
     margin: 3% 0;
@@ -350,10 +350,16 @@ section .card-text{
         
     }
     #slider label{
-        height: 45vh;
+        padding-bottom: 30px;
+        height: auto;
+        min-width: 168px;
     }
 }
-
+#slider label{
+        padding-bottom: 30px;
+        height: auto;
+        /* min-height: 180px !; */
+    }
 
 
 
@@ -570,6 +576,8 @@ a, a:hover, a:focus, a:active {
     .like{
         background: none;
         border: none;
+        display: flex;
+        align-items: center;
     }
     .right-section i{
         font-size: 110%;
@@ -579,7 +587,9 @@ a, a:hover, a:focus, a:active {
         color: rgb(255, 100, 100);
     }
     
-    
+    #count_of_likes{
+        font-size: 20px !important;
+    }
     
     
     
