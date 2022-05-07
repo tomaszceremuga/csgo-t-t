@@ -277,7 +277,20 @@ section .card-text{
     }
     input[type=radio] {
         left: 51%;
-        top: 600px;
+        top: 450px;
+    }
+}
+@media only screen and (max-width: 1500px) {
+    #slider{
+        left: 4%;
+    }
+    #slider label{
+        width: 80%;
+        height: 34vw; 
+    }
+    input[type=radio] {
+        left: 43%;
+        top: 500px;
     }
 }
 
@@ -289,29 +302,51 @@ section .card-text{
     }
     input[type=radio] {
         left: 54%;
-        top: 600px;
+        top: 500px;
         /* z-index: 2222222 */
     }
 }
+
 @media only screen and (max-width: 790px) {
     #slider{
         left: 12%;
     }
     #slider label{
         width: 70%;
-        height: 90vw;
+        height: 60vw;
     }
     input[type=radio] {
-        top: 150%;
-        left: 60%;
+        top: 500px;
+        left: 40%;
     }
 }
+  @media only screen and (max-width:500px) {
+    input[type=radio] {
+        left: 45%;
+    } 
+    #slider label{
+        width: 70%;
+        height: 85vw;
+    }
+    
+}
 
+@media only screen and (max-width: 426px) {
+    input[type=radio] {
+        left: 45%;
+        top: 500px;
+        /* z-index: 100; */
+        
+    }
+    #slider label{
+        height: 45vh;
+    }
+}  
 @media only screen and (max-width: 400px) {
     input[type=radio] {
-        left: 61%;
+        left: 45%;
         top: 220%;
-        z-index: 100;
+        /* z-index: 100; */
         
     }
     #slider label{
