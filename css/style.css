@@ -141,7 +141,7 @@ nav a{
 }
 article{
     margin: 45px 10%;
-    min-height: 800px;
+    min-height: 1000px;
 }
 article h6{
     margin: 3% 0;
@@ -267,30 +267,59 @@ section .card-text{
     transform: translate3d(-15%, 0, -100px);
   }
 
+  @media only screen and (max-width: 1870px) {
+    #slider{
+        left: 4%;
+    }
+    #slider label{
+        width: 80%;
+        height: 40vw; 
+    }
+    input[type=radio] {
+        left: 51%;
+        top: 600px;
+    }
+}
 
 @media only screen and (max-width: 1000px) {
+    
     #slider{
         width: 80%;
-        height: 40vw;
+        height: 70vw;
     }
     input[type=radio] {
         left: 54%;
+        top: 600px;
+        /* z-index: 2222222 */
     }
 }
-@media only screen and (max-width: 400px) {
-    input[type=radio] {
-        left: 61%;
-    }
-}
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 790px) {
     #slider{
+        left: 12%;
+    }
+    #slider label{
         width: 70%;
         height: 90vw;
     }
     input[type=radio] {
+        top: 150%;
         left: 60%;
     }
 }
+
+@media only screen and (max-width: 400px) {
+    input[type=radio] {
+        left: 61%;
+        top: 220%;
+        z-index: 100;
+        
+    }
+    #slider label{
+        height: 45vh;
+    }
+}
+
+
 
 
 #card-video{
@@ -506,7 +535,6 @@ a, a:hover, a:focus, a:active {
     .like{
         background: none;
         border: none;
-        color: none;
     }
     .right-section i{
         font-size: 110%;
