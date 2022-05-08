@@ -16,7 +16,7 @@ function loadLikes() {
 
     $.post('../../src/Likes/GetLikes.php', { article: 'nades' })
         .done((response) => {
-            console.log(response)
+         
             $('#count_of_likes').html(response.count);
 
             if(response.is_filled == 1){

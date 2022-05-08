@@ -267,19 +267,8 @@ section .card-text{
     transform: translate3d(-15%, 0, -100px);
   }
 
-  @media only screen and (max-width: 1870px) {
-    #slider{
-        left: 4%;
-    }
-    #slider label{
-        width: 80%;
-        height: 40vw; 
-    }
-    input[type=radio] {
-        left: 51%;
-        top: 450px;
-    }
-}
+   
+/*
 @media only screen and (max-width: 1500px) {
     #slider{
         left: 4%;
@@ -303,7 +292,6 @@ section .card-text{
     input[type=radio] {
         left: 54%;
         top: 500px;
-        /* z-index: 2222222 */
     }
 }
 
@@ -335,18 +323,17 @@ section .card-text{
     input[type=radio] {
         left: 45%;
         top: 500px;
-        /* z-index: 100; */
         
     }
     #slider label{
         height: 45vh;
     }
-}  
-@media only screen and (max-width: 400px) {
+}   
+@media only screen and (max-width: 426px) {
     input[type=radio] {
         left: 45%;
-        top: 220%;
-        /* z-index: 100; */
+        top: 140%;
+        
         
     }
     #slider label{
@@ -355,10 +342,23 @@ section .card-text{
         min-width: 168px;
     }
 }
+@media only screen and (max-width: 426px) {
+    input[type=radio] {
+        left: 45%;
+        top: 140%;
+       
+        
+    }
+    #slider label{
+        padding-bottom: 30px;
+        height: auto;
+        min-width: 168px;
+    }
+} */
 #slider label{
         padding-bottom: 30px;
         height: auto;
-        /* min-height: 180px !; */
+        
     }
 
 
@@ -756,3 +756,59 @@ footer{
     }
 }
 
+#mobile{
+    display: none;
+}
+/* #slider{
+    display: none;
+} */
+
+input[type=radio] {
+    top: 430px;
+}
+
+@media only screen and (max-width: 675px) {
+    #slider{
+        margin: unset -30% ;
+    }
+    #slider label{
+        height: 300px;
+    }
+    /* }
+    .card-text
+    .card-link2{
+        font-size: 60% !important;
+    } */
+    .sgtt{
+        margin-bottom: 30px;
+    }
+    #mobile{
+        display: inherit;
+    }
+    #slider1{
+        margin-top: 60px;
+    }
+    #mobile label{
+        padding-bottom: 30px;
+        margin-bottom: 60px;
+    }
+    #slider{
+        display: none;
+    }
+    /* .card-text{
+        left: 4%;
+    }
+    #slider label{
+        width: 80%;
+        height: 40vw; 
+    }
+    input[type=radio] {
+        left: 51%;
+        top: 450px;
+    } */
+} 
+@media only screen and (max-width: 769px) {
+    input[type=radio]{
+        left: 56%;
+    }
+}
